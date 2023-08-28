@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSobrino Tienda</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&diisplay=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styleTienda.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../tienda.html">
+            <img class="header__logo" src="../img/tienda/logo.png" alt="LogotipoTienda">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="../index.html">Inicio</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="../tienda.html">Tienda</a>
+        <a class="navegacion__enlace" href="../nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>VueJS</h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="../img/tienda/1.jpg" alt="Imagen del producto">
+
+            <div class="camisa__contenido">
+                <p>Bachha' batlh biq bo borghel bur ghobchuq lodni'pu' jer jev lo'lahbe'ghach mah me'nal netlh ngop po ha'dibah qanwi' qin pup qi'tu' qun rech tepqengwi' tuj muvwi' tlhov verengan ha'dibah yur 'edjen 'orghengan 'ud haqtaj.</p>
+
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>--Seleccionar talla--</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito"
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">FrontEnd Store - Félix Sobrino. Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
