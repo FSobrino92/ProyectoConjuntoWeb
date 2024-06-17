@@ -5,18 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlogDeCafé</title>
-    <link rel="stylesheet" href="css/styleBlogCafe.css">
+    <meta name="description" content="Página web de blog de café">
+
+    <!-- Prefetch-->
+    <link rel="prefetch" href="nosotrosCafe.html" as="document">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+     <link rel="preload" href="css/styleBlogCafe.css" as="style">
+     <link rel="stylesheet" href="css/styleBlogCafe.css">
 </head>
 
 <body>
 
     <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="blogDeCafe.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotrosCafe.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursosCafe.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contactoCafe.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
 
         <div class="header__texto">
             <h2 class="no-margin">Blog de café con consejos y cursos</h2>
@@ -24,6 +48,110 @@
         </div>
     </header>
 
-</body>
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Nuestro Blog</h3>
 
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/blogCafe/blog1.webp" type="image/webp">
+                        <img src="img/blogCafe/blog1.jpg" alt="Imagen Blog" loading="lazy">
+                    </picture>
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Tipos de Grano de Café</h4>
+                    <p>Betleh bey' biq borghel cha'qu' chuy divi' hom jaghla' lolchu'tah lolmoh maqmigh matlh nuh bey' po ha'dibah qap yintagh 'iqnah qad. Bop cha'par dah lih puq chonnaq quv rach rachwi' rech tal vad yur 'edjen 'orwi'. Bireqtagh cha'bip cha'nas doq 'ej wovbe' dor ghuy'cha' janluq piqard hod jer jev logh lor lursa' maqmigh mu'qad ves ngij pivchem puq chonnaq puqni'lod qanrad raw' valqis 'arlogh. Betleh bey' bi'rel tlharghduj boqha''egh butlh chevwi' tlhoy' choq da'nal din ghawran gheb ghitlhwi' jev lor lo' law' marwi' nahjej parbing puq chonnaq qaryoq'a' qulpa' qun sosbor'a' tagh tuj muvwi' tlhov valqis wogh yuqjijqa' 'edsehcha 'e'nal.</p>
+                    <a href="entradaCafe.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/blogCafe/blog2.webp" type="image/webp">
+                        <img src="img/blogCafe/blog2.jpg" alt="Imagen Blog" loading="lazy">
+                    </picture>
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">3 Deliciosas recetas de Café</h4>
+                    <p>Betleh bey' biq borghel cha'qu' chuy divi' hom jaghla' lolchu'tah lolmoh maqmigh matlh nuh bey' po ha'dibah qap yintagh 'iqnah qad. Bop cha'par dah lih puq chonnaq quv rach rachwi' rech tal vad yur 'edjen 'orwi'. Bireqtagh cha'bip cha'nas doq 'ej wovbe' dor ghuy'cha' janluq piqard hod jer jev logh lor lursa' maqmigh mu'qad ves ngij pivchem puq chonnaq puqni'lod qanrad raw' valqis 'arlogh. Betleh bey' bi'rel tlharghduj boqha''egh butlh chevwi' tlhoy' choq da'nal din ghawran gheb ghitlhwi' jev lor lo' law' marwi' nahjej parbing puq chonnaq qaryoq'a' qulpa' qun sosbor'a' tagh tuj muvwi' tlhov valqis wogh yuqjijqa' 'edsehcha 'e'nal.</p>
+                    <a href="entradaCafe.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/blogCafe/blog3.webp" type="image/webp">
+                        <img src="img/blogCafe/blog3.jpg" alt="Imagen Blog" loading="lazy">
+                    </picture>
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Beneficios del Café</h4>
+                    <p>Betleh bey' biq borghel cha'qu' chuy divi' hom jaghla' lolchu'tah lolmoh maqmigh matlh nuh bey' po ha'dibah qap yintagh 'iqnah qad. Bop cha'par dah lih puq chonnaq quv rach rachwi' rech tal vad yur 'edjen 'orwi'. Bireqtagh cha'bip cha'nas doq 'ej wovbe' dor ghuy'cha' janluq piqard hod jer jev logh lor lursa' maqmigh mu'qad ves ngij pivchem puq chonnaq puqni'lod qanrad raw' valqis 'arlogh. Betleh bey' bi'rel tlharghduj boqha''egh butlh chevwi' tlhoy' choq da'nal din ghawran gheb ghitlhwi' jev lor lo' law' marwi' nahjej parbing puq chonnaq qaryoq'a' qulpa' qun sosbor'a' tagh tuj muvwi' tlhov valqis wogh yuqjijqa' 'edsehcha 'e'nal.</p>
+                    <a href="entradaCafe.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+
+        </main>
+        <aside class="sidebar">
+            <h3>Nuestros Cursos y Talleres</h3>
+
+            <ul class="cursos no-padding">
+                <li class="widget-curso">
+                    <h4 class="no-margin">Técnicas de Extracción de Café</h4>
+                    <p class="widget-curso__label">Precio:
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo:
+                        <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="cursosCafe.html" class="boton boton--secundario">Más información sobre nuestros cursos y talleres</a>
+                </li>
+
+                <li class="widget-curso">
+                    <h4 class="no-margin">4 Recetas de Café para Principiantes</h4>
+                    <p class="widget-curso__label">Precio:
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo:
+                        <span class="widget-curso__info">25</span>
+                    </p>
+                    <a href="cursosCafe.html" class="boton boton--secundario">Más información sobre nuestros cursos y talleres</a>
+                </li>
+
+                <li class="widget-curso">
+                    <h4 class="no-margin">Como Elegir tu Cafetera Perfecta</h4>
+                    <p class="widget-curso__label">Precio:
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo:
+                        <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="cursosCafe.html" class="boton boton--secundario">Más información sobre nuestros cursos y talleres</a>
+                </li>
+              
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="blogDeCafe.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotrosCafe.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursosCafe.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contactoCafe.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/modernizr.js"></script>
+</body>
 </html>
