@@ -109,11 +109,6 @@ img{
 .logo__bold {
     font-weight: bold;
 }
-.Inicio {
-    color: var(--blanco);
-    font-weight: bold;
-    font-size: xx-large;
-}
 @media (min-width: 768px) { 
  .navegacion {
     display: flex;
